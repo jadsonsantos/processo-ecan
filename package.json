@@ -1,0 +1,22 @@
+{
+  "name": "processo-ecan",
+  "version": "1.0.0",
+  "description": "Teste para o processo seletivo da agência e-Can",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadsonsantos/processo-ecan.git"
+  },
+  "author": "Jadson Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadsonsantos/processo-ecan/issues"
+  },
+  "homepage": "https://github.com/jadsonsantos/processo-ecan#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
