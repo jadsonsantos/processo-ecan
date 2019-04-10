@@ -1,0 +1,78 @@
+.home-intro {
+    background-image: url('../images/background-vertex.jpg');
+    background-size: cover; 
+
+    position: relative;
+    height: 100vh;
+    color: #fff;
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .logo {
+            flex-grow: 2;
+        }
+        
+        .menu {
+
+            ul {
+                display: flex;
+                list-style-type: none;
+            }
+
+            li {
+                margin-right: 30px;
+            }
+
+            a {
+                padding: 10px;
+                display: block;
+            }
+        }
+
+        .cart {
+            padding: 8px 9px;            
+            margin-left: 30px;
+            background-color: $rosa;
+            border-radius: 55%;
+            cursor: pointer;
+        }
+    }
+
+    .info {    
+        width: 330px;    
+        margin: 70px 0 0 50px;
+        font-size: 0.8em;
+
+        h1 {    
+            font-size: 4em;
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            font-size: 1.3em;
+            line-height: 1.7;
+        }
+
+        a {
+            padding: 12px 50px;
+            background-color: #f71963;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 35px;
+        }
+
+        .tab { 
+            display: inline-block; 
+            margin-left: 10px; 
+        }
+    }
+}
+
