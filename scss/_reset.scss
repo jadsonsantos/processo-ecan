@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+input,
+label,
+select,
+button,
+textarea
+{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal;
+	background: none;
+	line-height: 1;
+	
+	/* Browsers have different default form fonts */
+	font-size: 13px;
+	font-family: Arial;
+}
