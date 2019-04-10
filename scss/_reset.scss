@@ -1,10 +1,15 @@
-body {
+body, ul {
     margin: 0;
 }
 
 h2, h3 {
     margin: 0;
     font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
 input,
@@ -21,8 +26,4 @@ textarea
 	white-space: normal;
 	background: none;
 	line-height: 1;
-	
-	/* Browsers have different default form fonts */
-	font-size: 13px;
-	font-family: Arial;
 }
