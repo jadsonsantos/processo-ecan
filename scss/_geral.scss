@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Fabriga;
+    font-weight: 400;
+    src: url("../fonts/Fabriga-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Fabriga;
+    font-weight: 900;
+    src: url("../fonts/Fabriga-Black.otf") format("opentype");
+}
+
+body {
+    font-family: Fabriga, sans-serif;
+    
+    .container {
+        width: 85%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+}
