@@ -1,0 +1,20 @@
+@media(max-width: 767px) {
+
+    .newsletter {
+    
+        text-align: left;
+
+        .newsletter-titulo {
+            font-size: 27px;
+        }
+
+        #newsletter-email {
+            padding: 15px 10px 15px 15px;
+            width: 150px;
+        }
+
+        .submit {
+            padding: 15px 25px;
+        }
+    }
+}

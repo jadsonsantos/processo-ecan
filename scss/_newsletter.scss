@@ -1,0 +1,35 @@
+.newsletter {
+    background-color: #ccc;
+    padding: 70px 0 30px;
+    text-align: center;
+
+    .newsletter-titulo {
+        margin: 0 0 20px;     
+        font-size: 50px;
+        font-weight: 700;
+        color: #363636;
+    }
+
+    .newsletter-subtitulo {
+        margin: 0 0 30px;
+        font-size: 15px;
+        line-height: 1.4;
+        color: #808080;
+    }
+    
+    input {
+        border-radius: 35px;
+    }
+
+    #newsletter-email {
+        padding: 15px 10px 15px 30px;
+        background-color: #F8F8F8;
+    }
+
+    .submit {
+        padding: 15px 50px;
+        background-color: $rosa; 
+        cursor: pointer;
+        color: #fff;
+    }
+}
