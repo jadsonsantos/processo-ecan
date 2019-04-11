@@ -29,4 +29,20 @@
             padding: 15px 25px;
         }
     }
+
+    .footer {
+
+        .container {    
+            flex-direction: column;
+            width: 70%;
+
+            >div {    
+                margin: 20px 0;
+            }
+        }
+
+        .social .titulo {
+            text-align: left; 
+        }
+    }
 }
