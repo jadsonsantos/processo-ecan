@@ -1,6 +1,21 @@
-@media(max-width: 767px) {
+@media (max-width: 768px) {
 
     .home-intro {
+
+        .header {
+
+            justify-content: space-around;
+
+            .logo {
+                flex-grow: 0;
+            }
+            .menu-mb li {
+                text-align: center;
+            }
+            .cart {
+                margin-left: 0;
+            }
+        }
 
         .info {
             width: 220px;
@@ -52,5 +67,74 @@
         .social .titulo {
             text-align: left; 
         }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mobile-btn {
+        display: block;
+        color: white;
+        width: 36px;
+        height: 36px;
+        border-top: 4px solid;
+        margin: 10px 0 0;
+        float: left;
+        position: relative;
+        cursor: pointer;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .mobile-btn::after, .mobile-btn::before {
+        content: '';
+        display: block;
+        height: 4px;
+        margin-top: 6px;
+        background: currentColor;
+        position: relative;
+        transition: transform .2s ease;
+    }
+    
+    .mobile-btn.active {
+        border-top-color: transparent;
+    }
+    
+    .mobile-btn.active::after {
+        margin-top: 0px;
+        top: 2px;
+        transform: rotate(45deg);
+    }
+    
+    .mobile-btn.active::before {
+        margin-top: 0px;
+        top: 6px;
+        transform: rotate(135deg);
+    }
+    .menu.menu-mb {    
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate3d(60px, 0px, 0px);
+        transition: .3s;
+    }
+    .menu.menu-mb.active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translate3d(0px, 0px, 0px);
+        order: 10;
+        flex-basis: 100%;
+    }
+    .menu-mb {
+    }
+    .menu-mb ul {
+        flex-direction: column;
+    }
+    .search {
+        display: none;
+    }    
+    .home-intro .mobile-btn {
+        order: -1;
+        display: block;
     }
 }

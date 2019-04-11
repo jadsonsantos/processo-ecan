@@ -13,4 +13,16 @@ function verificaSeExistePrecoAntigo() {
     }
 }
 
+function menuMobile() {
+
+    var x = document.querySelector('.mobile-btn');
+
+    x.onclick = function () {
+        this.classList.toggle("active");
+        document.querySelector('.menu-mb').classList.toggle("active");
+    }
+}
+
+
 verificaSeExistePrecoAntigo();
+menuMobile();
