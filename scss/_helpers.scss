@@ -1,1 +1,8 @@
 $rosa: #f71963;
+$corPrimaria: #f71963;
+$corSecundaria: #142032;
+
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
