@@ -1,5 +1,17 @@
 @media(max-width: 767px) {
 
+    .home-intro {
+
+        .info {
+            width: 220px;
+            margin: 40px 0 0 20px;
+
+            .titulo {    
+                font-size: 1.8em;
+            }
+        }
+    }
+    
     .newsletter {
     
         text-align: left;
