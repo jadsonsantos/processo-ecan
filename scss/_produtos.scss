@@ -1,0 +1,128 @@
+.produtos {
+
+    padding: 40px 0;
+    background-color: #F0F0F0;
+
+    .intro {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+
+        .titulo {    
+            font-size: 30px;
+            font-weight: 700;
+            color: #363636;
+        }
+
+        p {
+            line-height: 1.8;    
+            font-size: 14px;
+            color: #808080;
+
+            a {
+                text-decoration: underline;
+                color: $corPrimaria;
+            }
+        }
+    }
+
+    .lista {
+
+        @include flexbox();   
+        justify-content: center;
+
+        .produto {
+            background-color: #fff;
+            padding: 50px 25px 20px;
+            margin: 15px 8px;
+            position: relative;
+            cursor: pointer;
+
+            .info {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .titulo {
+                font-size: 13px;
+                color: #363636;
+            }
+
+            .preco-container span {
+                margin: 0 10px;
+                font-size: 13px;
+            }
+
+            .preco {
+                color: $corPrimaria;
+            }
+
+            .preco-sem-desconto {
+                color: #666;
+            }
+
+            .desconto {    
+                position: absolute;
+                top: 20px;
+                left: 0;
+                padding: 5px 15px 3px 10px;
+                background-color: #F0F0F0;
+                color: $corPrimaria;
+                font-weight: 700;
+                font-size: 14px;
+                border-radius: 0 6px 6px 0;
+            }            
+
+            .add-to-cart {
+                @include botao(#00BBD4);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                font-size: 12px;
+            }
+
+            i {
+                display: inline;
+            }
+        }
+
+        .produto:hover .add-to-cart {
+            opacity: 1;
+            transition: all 0.5s ease-out;
+        }
+
+        .produto:hover {
+            display: block;
+        }
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .controlers{
+
+        margin-top: 15px;
+        text-align: center;
+
+        .item {
+            margin: 0 5px;
+            width: 12px;
+            background-color: #999999;
+            height: 12px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            :before, :after {
+                background: black;
+
+            }
+        }
+        .ativo {
+            background-color: $corPrimaria;
+        }
+        
+    }
+}

@@ -6,3 +6,11 @@ $corSecundaria: #142032;
     display: flex;
     flex-wrap: wrap;
 }
+
+@mixin botao($cor) {
+    border-radius: 35px;
+    padding: 10px 40px;
+    background-color: $cor;
+    color: #fff;
+    cursor: pointer;
+}
